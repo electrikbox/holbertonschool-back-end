@@ -8,7 +8,7 @@ import sys
 API_URL = 'https://jsonplaceholder.typicode.com'
 
 if __name__ == '__main__':
-    
+
     USER_ID = sys.argv[1]
 
     user = requests.get(f'{API_URL}/users/{USER_ID}').json()
@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     with open(csv_filename, mode='w') as csv_file:
         csv_writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
-        
+
         for task in todo_list:
             csv_writer.writerow([
                 user['id'],
