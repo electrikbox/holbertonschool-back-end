@@ -22,7 +22,7 @@ if __name__ == '__main__':
     len_completed_tasks = len(completed_tasks)
     total_todo = len(todo_list_data)
 
-    print("Employee {} is done with tasks({}/{})".format(
+    print("Employee {} is done with tasks({}/{}):".format(
         user_name,
         len_completed_tasks,
         total_todo))
