@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
         if user_id not in data:
             data[user_id] = []
-        
+
         data[user_id].append({
             "username": next(user['username']
                              for user in users
